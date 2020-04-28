@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E91537B7-1E97-4C2B-8B34-28110139BFFB}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RUHSDS_ADT</RootNamespace>
+    <AssemblyName>RUHSDS_ADT</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>c:\Apps\RUHSDS_ADT_Listener\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>\\rcrmcfs01\RCRMC\Users\INFO\Install\RUHSDS_Listener_Prod\</InstallUrl>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>46A6E1086D27407B12ED4717E6837E30AD7CAD02</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>HL7Listener_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NHapi.Base, Version=2.5.0.6, Culture=neutral, PublicKeyToken=d0d8ea960a3440eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\nHapi.2.5.0.6\lib\NHapi.Base.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NHapi.Model.V21, Version=2.5.0.6, Culture=neutral, PublicKeyToken=d0d8ea960a3440eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\nHapi.2.5.0.6\lib\NHapi.Model.V21.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NHapi.Model.V22, Version=2.5.0.6, Culture=neutral, PublicKeyToken=d0d8ea960a3440eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\nHapi.2.5.0.6\lib\NHapi.Model.V22.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NHapi.Model.V23, Version=2.5.0.6, Culture=neutral, PublicKeyToken=d0d8ea960a3440eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\nHapi.2.5.0.6\lib\NHapi.Model.V23.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NHapi.Model.V231, Version=2.5.0.6, Culture=neutral, PublicKeyToken=d0d8ea960a3440eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\nHapi.2.5.0.6\lib\NHapi.Model.V231.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NHapi.Model.V24, Version=2.5.0.6, Culture=neutral, PublicKeyToken=d0d8ea960a3440eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\nHapi.2.5.0.6\lib\NHapi.Model.V24.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NHapi.Model.V25, Version=2.5.0.6, Culture=neutral, PublicKeyToken=d0d8ea960a3440eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\nHapi.2.5.0.6\lib\NHapi.Model.V25.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NHapi.Model.V251, Version=2.5.0.6, Culture=neutral, PublicKeyToken=d0d8ea960a3440eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\nHapi.2.5.0.6\lib\NHapi.Model.V251.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NHapi.Model.V26, Version=2.5.0.6, Culture=neutral, PublicKeyToken=d0d8ea960a3440eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\nHapi.2.5.0.6\lib\NHapi.Model.V26.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NHapi.Model.V27, Version=2.5.0.6, Culture=neutral, PublicKeyToken=d0d8ea960a3440eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\nHapi.2.5.0.6\lib\NHapi.Model.V27.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NHapi.Model.V271, Version=2.5.0.6, Culture=neutral, PublicKeyToken=d0d8ea960a3440eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\nHapi.2.5.0.6\lib\NHapi.Model.V271.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NHapi.Model.V28, Version=2.5.0.6, Culture=neutral, PublicKeyToken=d0d8ea960a3440eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\nHapi.2.5.0.6\lib\NHapi.Model.V28.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NHapi.Model.V281, Version=2.5.0.6, Culture=neutral, PublicKeyToken=d0d8ea960a3440eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\nHapi.2.5.0.6\lib\NHapi.Model.V281.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ErrorLogger.cs" />
+    <Compile Include="HL7Message.cs" />
+    <Compile Include="HL7Processor.cs" />
+    <Compile Include="HL7TCPListener.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
